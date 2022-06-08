@@ -5,6 +5,7 @@ export default function newsId({ news }) {
     <main>
       <h1>{news.title}</h1>
       <p>{news.publishedAt}</p>
+      <p className="category">{blog.category && `${blog.category.name}`}</p>
       <div
         dangerouslySetInnerHTML={{
           __html: `${news.body}`,
